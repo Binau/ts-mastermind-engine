@@ -18,5 +18,12 @@
     "publish-patch": "npm run build-ts-prod && npm version patch && npm publish"
   },
   "main": "./build/index.js",
-  "types": "./lib/index.d.ts"
+  "types": "./lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Binau/ts-mastermind-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Binau/ts-mastermind-engine/issues"
+  }
 }
