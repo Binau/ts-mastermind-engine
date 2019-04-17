@@ -1,0 +1,21 @@
+{
+  "name": "ts-mastermind-engine",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/node": "^11.13.4",
+    "ts-all-utils": "^1.0.19",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.3"
+  },
+  "author": "Binau",
+  "license": "SEE LICENSE IN CC-BY-4.0",
+  "dependencies": {},
+  "scripts": {
+    "start": "node test/test.js",
+    "start-ts": "ts-node src/test.ts",
+    "build-ts": "tsc -d -p tsconfig.json",
+    "publish-patch": "npm run build-ts && npm version patch && npm publish"
+  },
+  "main": "./build/index.js",
+  "types": "./lib/index.d.ts"
+}
