@@ -13,8 +13,9 @@
   "scripts": {
     "start": "node test/test.js",
     "start-ts": "ts-node src/test.ts",
-    "build-ts": "tsc -d -p tsconfig.json",
-    "publish-patch": "npm run build-ts && npm version patch && npm publish"
+    "build-ts-test": "tsc -d -p tsconfig.json",
+    "build-ts-prod": "tsc -d -p tsconfig-prod.json",
+    "publish-patch": "npm run build-ts-prod && npm version patch && npm publish"
   },
   "main": "./build/index.js",
   "types": "./lib/index.d.ts"
